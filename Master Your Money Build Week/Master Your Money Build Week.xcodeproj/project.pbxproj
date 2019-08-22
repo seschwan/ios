@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF257E53230E351E00C60BFE /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF257E51230E351E00C60BFE /* User.xcdatamodeld */; };
+		EF257E55230E50FD00C60BFE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF257E54230E50FD00C60BFE /* CoreDataStack.swift */; };
 		EF39ADB2230CF38D005BF6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39ADB1230CF38D005BF6C6 /* AppDelegate.swift */; };
 		EF39ADB4230CF38D005BF6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39ADB3230CF38D005BF6C6 /* ViewController.swift */; };
 		EF39ADB7230CF38D005BF6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF39ADB5230CF38D005BF6C6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF257E52230E351E00C60BFE /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		EF257E54230E50FD00C60BFE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EF39ADAE230CF38C005BF6C6 /* Master Your Money Build Week.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master Your Money Build Week.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF39ADB1230CF38D005BF6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF39ADB3230CF38D005BF6C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF257E50230E34C600C60BFE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EF257E51230E351E00C60BFE /* User.xcdatamodeld */,
+				EF257E54230E50FD00C60BFE /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		EF39ADA5230CF38C005BF6C6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 		EF39ADB0230CF38C005BF6C6 /* Master Your Money Build Week */ = {
 			isa = PBXGroup;
 			children = (
+				EF257E50230E34C600C60BFE /* CoreData */,
 				EF39ADC6230CF426005BF6C6 /* Model */,
 				EF39ADC7230CF432005BF6C6 /* Model Controller */,
 				EF39ADC5230CF41A005BF6C6 /* View */,
@@ -183,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF257E53230E351E00C60BFE /* User.xcdatamodeld in Sources */,
 				EF39ADB4230CF38D005BF6C6 /* ViewController.swift in Sources */,
 				EF39ADB2230CF38D005BF6C6 /* AppDelegate.swift in Sources */,
+				EF257E55230E50FD00C60BFE /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "$(SRCROOT)/Master Your Money Build Week/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "$(SRCROOT)/Master Your Money Build Week/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF257E51230E351E00C60BFE /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF257E52230E351E00C60BFE /* User.xcdatamodel */,
+			);
+			currentVersion = EF257E52230E351E00C60BFE /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF39ADA6230CF38C005BF6C6 /* Project object */;
 }
